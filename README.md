@@ -16,3 +16,9 @@ Para compilar el proyecto, ejecuta el comando `make` en la raíz del proyecto:
 ```bash
 make
 ```
+
+## Ejecución
+
+```bash
+./pipex archivo_in "comando1" "comando2" archivo_out
+```
