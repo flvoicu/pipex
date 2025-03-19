@@ -1,15 +1,15 @@
-# pipex - Simulación de la Redirección de Tuberías en Shell
+# pipex - Simulating Pipe Redirection
 
-**pipex** es un proyecto en **C** diseñado para replicar el comportamiento de la redirección de tuberías (`|`) en un entorno de terminal Unix. Este programa ejecuta dos comandos con un archivo de entrada y de salida, y conecta los comandos de forma que la salida del primero sea la entrada del segundo.
+**pipex** is a **C** project designed to replicate the behavior of pipe redirection (`|`) in a Unix terminal environment. This program executes two commands with an input and output file, connecting the commands so that the output of the first command becomes the input of the second.
 
-## Objetivo
+## Objective
 
-El programa debe imitar el siguiente comando de shell:
+The program must imitate the following shell command:
 ```bash
-< archivo_in comando1 | comando2 > archivo_out
+< input_file command1 | command2 > output_file
 ```
 
-## Compilación
+## Compilation
 
 Para compilar el proyecto, ejecuta el comando `make` en la raíz del proyecto:
 
@@ -17,8 +17,8 @@ Para compilar el proyecto, ejecuta el comando `make` en la raíz del proyecto:
 make
 ```
 
-## Ejecución
+## Execution
 
 ```bash
-./pipex archivo_in "comando1" "comando2" archivo_out
+./pipex input_file "command1" "command2" output_file
 ```
